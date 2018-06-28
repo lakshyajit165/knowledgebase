@@ -167,6 +167,6 @@ app.delete('/article/:id', (req,res) => {
 });
 
 //start server
-app.listen(3000, () => {
-	console.log('Server started on port 3000...');
+app.listen(process.env.PORT || 3000, () => {
+	console.log('Server started...');
 });
